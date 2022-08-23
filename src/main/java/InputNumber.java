@@ -14,7 +14,7 @@ public class InputNumber {
     Scanner sc = new Scanner(System.in);
 
     while (!matches) {
-      System.out.println("올바른 숫자를 입력 해 주세요 : ");
+      System.out.print("올바른 숫자를 입력 해 주세요 : ");
 
       input = sc.nextLine();
       matches = input.matches(regex);

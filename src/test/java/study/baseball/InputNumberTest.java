@@ -1,4 +1,4 @@
-package study;
+package study.baseball;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
