@@ -47,6 +47,8 @@ public class Count {
       System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
       Scanner sc1 = new Scanner(System.in);
       start = sc1.nextInt();
+      if(start != 2)
+        start = Integer.parseInt(RandomAnswer.randomNumber());
     }
 
     return start;

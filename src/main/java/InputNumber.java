@@ -8,7 +8,7 @@ public class InputNumber {
     this.input = inputValidation(input);;
   }
 
-  private static String inputValidation(String input) {
+  public static String inputValidation(String input) {
     String regex = "([1-9]{3})";
     boolean matches = input.matches(regex);
     Scanner sc = new Scanner(System.in);
