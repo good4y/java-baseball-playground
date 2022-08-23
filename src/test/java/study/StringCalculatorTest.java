@@ -19,7 +19,7 @@ public class StringCalculatorTest {
   @ParameterizedTest
   @ValueSource(strings = {"1+2", "1*2"})
   @DisplayName("문자열 받기")
-  public void input_String(String input) throws Exception {
+  public void inputString(String input) throws Exception {
     // Given
     InputStream in = new ByteArrayInputStream(input.getBytes());
     System.setIn(in);

@@ -25,7 +25,7 @@ public class SetTest {
 
   @Test
   @DisplayName("요구사항 1 - set의 size()를 이용한 크기 구하기")
-  public void set_size() throws Exception{
+  public void setSize() throws Exception{
     // Given
 
     // When
@@ -37,7 +37,7 @@ public class SetTest {
   @DisplayName("요구사항 2 - set의 contains()를 이용한 값 존재 유무 확인")
   @ParameterizedTest
   @ValueSource(ints = {1, 2, 3})
-  public void set_contains(int number) throws Exception{
+  public void setContains(int number) throws Exception{
     // Given
 
     // When
@@ -49,7 +49,7 @@ public class SetTest {
   @ParameterizedTest
   @DisplayName("요구사항 3 - contains()를 이용하여 true, false 값 모두 테스트하기")
   @CsvSource(value = {"1,true", "2,true", "3,true", "4,false", "5,false"})
-  public void set_contains_trueOrFalse(int number, boolean isTrue) throws Exception{
+  public void setContainsTrueOrFalse(int number, boolean isTrue) throws Exception{
     // Given
 
     // When

@@ -18,7 +18,7 @@ public class StringTest {
 
     @Test
     @DisplayName("요구사항 1_1 - split을 이용하여 1과 2로 분리되는 배열 생성")
-    public void split_string1() throws Exception{
+    public void splitString1() throws Exception{
       // Given
         String before = "1,2";
       // When
@@ -31,7 +31,7 @@ public class StringTest {
 
     @Test
     @DisplayName("요구사항 1_2 - 1을 ,로 split 시 1만 포함 하는 배열 생성")
-    public void split_string2() throws Exception{
+    public void splitString2() throws Exception{
       // Given
         String before = "1";
       // When
@@ -64,7 +64,7 @@ public class StringTest {
 
     @Test
     @DisplayName("요구사항 3_2 - charAt() 메소드 사용 시 예외 발생 테스트하기")
-    public void charAt_Exception() throws Exception{
+    public void charAtException() throws Exception{
       // Given
         String before = "abc";
       // When
