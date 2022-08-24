@@ -11,6 +11,7 @@ public class RandomNumberGeneratorTest {
     RandomNumber randomNumber = new RandomNumber();
 
     assertThat(randomNumber.getNumber().size()).isEqualTo(3);
+
   }
 
 
