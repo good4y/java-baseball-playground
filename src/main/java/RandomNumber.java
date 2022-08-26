@@ -15,14 +15,14 @@ public class RandomNumber {
     return number;
   }
 
-  private static Integer randomNumberGenerator() {
-    return new Random().nextInt(9) + 1;
-  }
-
-  private static List<Integer> randomList() {
+  public static List<Integer> randomList() {
     return IntStream.generate(RandomNumber::randomNumberGenerator)
         .distinct()
         .limit(3)
         .collect(ArrayList::new, List::add, List::addAll);
+  }
+
+  private static Integer randomNumberGenerator() {
+    return new Random().nextInt(9) + 1;
   }
 }
